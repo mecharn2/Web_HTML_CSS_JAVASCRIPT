@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba4</title>
+    <meta name="description" content="Trabajo Final masterD">
+    <meta name="Author" content="Toni">
+    <title>Web HTML, CSS y JAVASCRIPT</title>
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/myStyles.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <!--FUENTES-->
+    <link href="../assets/font/PlaypenSans-VariableFont_wght.ttf" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                  <img src="../assets/images/logotoni2.png" alt="Bootstrap" width="90" height="60">
+                <a class="navbar-brand" href="../index.html">
+                  <img class="logotoni" src="../assets/images/logotoni2.png" alt="Bootstrap" width="90" height="60">
                 </a>
               </div>
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,15 +51,71 @@
         <div class="container">
             <img src="../assets/images/1.png" class="img-fluid" alt="cabecera" id="cabecera"> 
         </div>
+        <div class="sliderShow-contant container">
+          <div class="mySlides">
+              <div class="numero">1/8</div>
+              <img class="img-fluid img1" src="../assets/images/portfolio1.jpg" alt="Imagen1">
+              <div class="texto">Estudio de Web adaptable para cualquier dispositivo</div>
+          </div>
+          <div class="mySlides">
+              <div class="numero">2/8</div>
+              <img class="img-fluid img1" src="../assets/images/portfolio2.jpg" alt="Imagen2">
+              <div class="texto">Portfolio Personalizado</div>
+          </div>
+          <div class="mySlides">
+              <div class="numero">3/8</div>
+              <img class="img-fluid img1" src="../assets/images/portfolio3.jpg" alt="Imagen3">
+              <div class="texto">Blog con acceso a Redes Sociales</div>
+          </div>
+          <div class="mySlides">
+              <div class="numero">4/8</div>
+              <img class="img-fluid img1" src="../assets/images/portfolio4.jpg" alt="Imagen4">
+              <div class="texto">Web y aplicación para dispositivos Apple</div>
+          </div>
+          <div class="mySlides">
+              <div class="numero">5/8</div>
+              <img class="img-fluid img1" src="../assets/images/portfolio5.jpg" alt="Imagen5">
+              <div class="texto">Web para Smartphone o Tablet</div>
+          </div>
+          <div class="mySlides">
+              <div class="numero">6/8</div>
+              <img class="img-fluid img1" src="../assets/images/portfolio6.jpg" alt="Imagen6">
+              <div class="texto">Web sencilla y dinámica</div>
+          </div>
+          <div class="mySlides">
+              <div class="numero">7/8</div>
+              <img class="img-fluid img1" src="../assets/images/portfolio7.jpg" alt="Imagen7">
+              <div class="texto">Web Empresarial</div>
+          </div>
+          <div class="mySlides">
+              <div class="numero">8/8</div>
+              <img class="img-fluid img1" src="../assets/images/portfolio8.jpg" alt="Imagen8">
+              <div class="texto">Web para Pymes</div>
+          </div>
+
+          <a class="antes" onclick="pasarImagen(-1)">&#10094;</a>
+          <a class="despues" onclick="pasarImagen(1)">&#10095;</a>
+
+      </div>
+
+          <div class="puntos">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>
 
     </main>
     <footer>
         <div class="container">
             <img src="../assets/images/2.png" class="img-fluid" alt="piesPag" id="piesPag">
-            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/instagram.png" alt="instagram" width="512" height="512" class="soci1"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/facebook.png" alt="facebook" width="512" height="512" class="soci1"></a>
-            <a href="https://www.linkedin.com" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" width="512" height="512" class="soci"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../assets/images/twitter_5968830.png" alt="twitter" width="512" height="512" class="soci"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/instagram.png" alt="instagram" width="512" height="512" class="soci1 img-fluid"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/facebook.png" alt="facebook" width="512" height="512" class="soci1 img-fluid"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" width="512" height="512" class="soci img-fluid"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../assets/images/twitter.png" alt="twitter" width="512" height="512" class="soci img-fluid"></a>
         </div>
         <div class="container">
             
@@ -63,5 +126,6 @@
     </footer>
     <!--JAVASCRIPT-->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../js/galeria.js"></script>
 </body>
 </html>

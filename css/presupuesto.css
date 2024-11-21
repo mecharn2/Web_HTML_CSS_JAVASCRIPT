@@ -1,0 +1,94 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width:  auto;
+    max-width: 550px;
+    height: auto;
+    margin: 10px auto;
+    border: solid 1px rgb(107, 103, 103);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    padding: 10px;
+    background: #fff;
+    color: black;   
+}
+
+.titulo{
+    text-align: center;
+}
+
+.form{
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;    
+}
+
+h3{
+    font-size: 20px;
+}
+
+.condiciones{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; 
+    justify-content: center;       
+}
+
+.input-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(107, 103, 103);
+    justify-content: center;
+    align-items: center;
+}
+
+.button-contenedor{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;   
+}
+
+button{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.pago{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.extras1{
+    padding: 15px;
+}
+
+.valido{
+    border-color: green;
+}
+
+.invalido {
+    border-color: red;
+}
+
+.error{
+    color: red;
+}
+.poliEnvio{
+    color: black;
+}
+
+.plazo{
+    padding: 20px;
+}

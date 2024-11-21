@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba4</title>
+    <meta name="description" content="Trabajo Final masterD">
+    <meta name="Author" content="Toni">
+    <title>Web HTML, CSS y JAVASCRIPT</title>
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/myStyles.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <!--FUENTES-->
+    <link href="../assets/font/PlaypenSans-VariableFont_wght.ttf" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                  <img src="../assets/images/logotoni2.png" alt="Bootstrap" width="90" height="60">
+                <a class="navbar-brand" href="../index.html">
+                  <img class="logotoni" src="../assets/images/logotoni2.png" alt="Bootstrap" width="90" height="60">
                 </a>
               </div>
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,15 +53,22 @@
         <div class="container">
             <img src="../assets/images/1.png" class="img-fluid" alt="cabecera" id="cabecera"> 
         </div>
+        <div class="container">
+          <div class="mapa" id="map"></div>
+            <div class="infoMaps">
+                <p>Información de Contacto:</p>
+                <p>Tel: 635525659. Email: tonimellado@myweb.com</p>
+            </div>
+        </div>
 
     </main>
     <footer>
         <div class="container">
             <img src="../assets/images/2.png" class="img-fluid" alt="piesPag" id="piesPag">
-            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/instagram.png" alt="instagram" width="512" height="512" class="soci1"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/facebook.png" alt="facebook" width="512" height="512" class="soci1"></a>
-            <a href="https://www.linkedin.com" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" width="512" height="512" class="soci"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../assets/images/twitter_5968830.png" alt="twitter" width="512" height="512" class="soci"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/instagram.png" alt="instagram" width="512" height="512" class="soci1 img-fluid"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/facebook.png" alt="facebook" width="512" height="512" class="soci1 img-fluid"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" width="512" height="512" class="soci img-fluid"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../assets/images/twitter.png" alt="twitter" width="512" height="512" class="soci img-fluid"></a>
         </div>
         <div class="container">
             
@@ -62,6 +78,9 @@
         <div class="poli"><a href="/views/politica.html">Política de Privacidad y Cookies.Condiciones de Venta</a></div>
     </footer>
     <!--JAVASCRIPT-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../js/mapa.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+
+
+
+ .mapa{
+    color: black; 
+    display: block;
+    height: 550px;
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+    margin: 0 auto;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+ }
+
+ .infoMaps{
+    text-align: center;
+ }
+

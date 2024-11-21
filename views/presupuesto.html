@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba4</title>
+    <meta name="description" content="Trabajo Final masterD">
+    <meta name="Author" content="Toni">
+    <title>Web HTML, CSS y JAVASCRIPT</title>
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/myStyles.css">
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <!--FUENTES-->
+    <link href="../assets/font/PlaypenSans-VariableFont_wght.ttf" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                  <img src="../assets/images/logotoni2.png" alt="Bootstrap" width="90" height="60">
+                <a class="navbar-brand" href="../index.html">
+                  <img class="logotoni" src="../assets/images/logotoni2.png" alt="Bootstrap" width="90" height="60">
                 </a>
               </div>
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,15 +51,101 @@
         <div class="container">
             <img src="../assets/images/1.png" class="img-fluid" alt="cabecera" id="cabecera"> 
         </div>
+        <form class="form" id="form" method="post" action="get">
+          <div><h2>FORMULARIO DE SOLICITUD</h2></div>
+          <div class="contenedor">
+              <h3>Datos</h3>
+              <div class="input-contenedor">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+                  <span class="error" id="nombreError"></span> 
+              </div>
+              <div class="input-contenedor">
+                  <label for="apellidos">Apellidos</label>
+                  <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos">
+                  <span class="error" id="apellidosError"></span> 
+              </div>
+              <div class="input-contenedor">
+                  <label for="telefono">Teléfono</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="Escriba su teléfono">
+                  <span class="error" id="telefonoError"></span> 
+              </div>
+              <div class="input-contenedor">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Escriba su email">
+                  <span class="error" id="emailError"></span> 
+              </div>
+          </div>
+
+          <div class="contenedor">
+              <h3>Productos</h3>
+              <div class="producto" id="campos">
+                  <label for="base">Elija su producto</label>
+                  <select name="base" id="base">
+                      <option value="150">Estudio Básico Diseño UX 150€</option>
+                          <option value="200">Prototipo Baja Fidelidad 200€</option>
+                          <option value="250">Prototipo Alta Fidelidad 250€</option>
+                          <option value="500">Estudio y Diseño UX completo 500€</option>
+                          <option value="800">Web(HTML y CSS) 800€</option>
+                          <option value="1200">Web(HTML, CSS y JAVASCRIPT) 1200€</option>
+                          <option value="1500">Creación completa pagina Web 1500€</option>
+                  </select>
+              </div>
+              
+              <div>
+                  <div class="extras1">
+                      <label for="basicoPlus">Estudio Básico + Estudio Competencias</label>
+                      <input type="checkbox" value="120" name="basicoPlus" id="basicoPlus">
+                  </div>
+                  <div class="extras1">
+                      <label for="presentacion">Presentación in situ Estudio Diseño UX</label>
+                      <input type="checkbox" value="300" name="presentacion" id="presentacion">
+                  </div>
+                  <div class="extras1">
+                      <label for="portfolio">Porfolio Personal</label>
+                      <input type="checkbox" value="200" name="portfolio" id="portfolio">
+                  </div>
+                  <div class="extras1">
+                      <label for="mapaGps">Mapa + Localización GPS</label>
+                      <input type="checkbox" value="210" name="mapaGps" id="mapaGps">
+                  </div>
+                  <div class="pago">
+                      <label for="total">Presupuesto Estimado</label>
+                      <input type="text" id="total" value="">
+                  </div>
+
+                  <div class="plazo">
+                      <label for="plazo">Elija Modo de Pago</label>
+                      <select name="plazo" id="plazo">
+                          <option value="0">Contado</option>
+                          <option value="3">3 Meses</option>
+                          <option value="6">6 Meses</option>
+                          <option value="12">12 Meses</option>
+                      </select>
+                          
+                  </div>
+                  <h3>Aceptación de condiciones y envió de presupuesto</h3>
+              <div>
+                  <input type="checkbox" name="acepta" value="SI" id="acepta" required>
+                  <label for="acepta"><a class="poliEnvio" href="../views/politica.html">Acepto la política de privacidad y envió</a></label>
+                  <div class="button-contenedor">
+                      <button type="submit" id="enviar">Enviar</button>
+                      <button type="reset" id="reset">Borrar</button>
+                  </div>
+                  
+              </div>
+          </div>
+          </div>
+      </form>
 
     </main>
     <footer>
         <div class="container">
             <img src="../assets/images/2.png" class="img-fluid" alt="piesPag" id="piesPag">
-            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/instagram.png" alt="instagram" width="512" height="512" class="soci1"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/facebook.png" alt="facebook" width="512" height="512" class="soci1"></a>
-            <a href="https://www.linkedin.com" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" width="512" height="512" class="soci"></a>
-            <a href="https://twitter.com" target="_blank"><img src="../assets/images/twitter_5968830.png" alt="twitter" width="512" height="512" class="soci"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/instagram.png" alt="instagram" width="512" height="512" class="soci1 img-fluid"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/facebook.png" alt="facebook" width="512" height="512" class="soci1 img-fluid"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="../assets/images/linkedin.png" alt="LinkedIn" width="512" height="512" class="soci img-fluid"></a>
+            <a href="https://twitter.com" target="_blank"><img src="../assets/images/twitter.png" alt="twitter" width="512" height="512" class="soci img-fluid"></a>
         </div>
         <div class="container">
             
@@ -63,5 +156,6 @@
     </footer>
     <!--JAVASCRIPT-->
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../js/presupuesto.js"></script>
 </body>
 </html>
